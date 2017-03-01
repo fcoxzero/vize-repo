@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{0832149E-CC4A-4EE9-8379-6B78E358C9B1}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Demo6</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Demo6.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constructors.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VeggieViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)InventarioVeggieViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VeggieTitulo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)VeggieTituloInventario.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pastel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)InventarioPastel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZoneDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ZoneItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ControlPage1.xaml.cs">
+      <DependentUpon>ControlPage1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ControlPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
